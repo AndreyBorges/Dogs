@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  color: #333;
+  --typeFrist: Helvetica, Arial, sans-serif;
+  --typeSecond: "Spectral", Georgia;
+  font-family: var(--typeFrist);
+  padding-top: 4rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: #333;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--typeFrist);
+  color: #333;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  margin-top: 4rem;
+}
+
+.title {
+  font-family: var(--typeSecond);
+  line-height: 1;
+  font-size: 3rem;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fb1;
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  border-radius: 0.2rem;
+  z-index: -1;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.5s forwards;
+}
+
+.VictoryContainer {
+  height: initial !important;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

@@ -1,0 +1,14 @@
+.photoComments {
+  overflow-y: auto;
+  word-break: break-word;
+  padding: 0 2rem;
+}
+
+.photoSingleComments {
+  padding: 0;
+}
+
+.photoComments li {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}

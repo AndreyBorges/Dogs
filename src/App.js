@@ -1,12 +1,9 @@
 import React from "react";
+import "./App.css";
+import { Home } from "./views";
 
-function App() {
-  return (
-    <div>
-      {" "}
-      <h1>hello word!</h1>
-    </div>
-  );
-}
+const App = () => {
+  return <Home />;
+};
 
 export default App;

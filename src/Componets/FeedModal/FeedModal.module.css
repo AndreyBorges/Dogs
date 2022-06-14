@@ -1,0 +1,17 @@
+.feedModal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.364);
+  left: 0;
+  top: 0;
+  display: flex;
+  z-index: 9999;
+  padding: 2rem calc(4rem + 15px) 2rem 4rem;
+}
+
+@media (max-width: 40rem) {
+  .feedModal {
+    padding: 1rem calc(2rem + 15px) 1rem 2rem;
+  }
+}
